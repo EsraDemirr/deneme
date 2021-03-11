@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/diceText"
+        android:layout_width="281dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:foregroundGravity="center_vertical"
+        android:gravity="center"
+        android:text="Android BootCamp"
+        android:textColor="#CA0B0B"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/diceButton"
+        android:layout_width="110dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginRight="59dp"
+        android:text="Değiştir"
+        app:layout_constraintEnd_toStartOf="@+id/getButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diceImage" />
+
+    <ImageView
+        android:id="@+id/diceImage"
+        android:layout_width="163dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginRight="124dp"
+        android:foregroundGravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getData"
+        app:srcCompat="@drawable/dice1" />
+
+    <EditText
+        android:id="@+id/getData"
+        android:layout_width="205dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginLeft="103dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginRight="103dp"
+        android:layout_marginBottom="57dp"
+        android:ems="10"
+        android:foregroundGravity="center_vertical"
+        android:hint="getData:"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/diceImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diceText" />
+
+    <Button
+        android:id="@+id/getButton"
+        android:layout_width="112dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:text="gönder"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diceImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
